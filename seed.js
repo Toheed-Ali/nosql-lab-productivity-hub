@@ -31,16 +31,16 @@ const { ObjectId } = require('mongodb');
   const passwordHash = await bcrypt.hash('password123', 10);
 
   const user1 = await db.collection('users').insertOne({
-    email: 'toheed@itu.edu.pk',
+    email: 'hasnat@itu.edu.pk',
     passwordHash,
-    name: 'Toheed',
+    name: 'Hasnat',
     createdAt: new Date()
   });
 
   const user2 = await db.collection('users').insertOne({
-    email: 'tanzeel@itu.edu.pk',
+    email: 'ali@itu.edu.pk',
     passwordHash,
-    name: 'Tanzeel',
+    name: 'Ali',
     createdAt: new Date()
   });
 
